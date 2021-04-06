@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainTheme">
+
+    <include android:id="@+id/bottom_navigation_bar"
+        layout="@layout/bottom_navigation_bar"></include>
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/active_patient_title"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Victim status"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/active_patient_status"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/active_patient_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/active_patient_status_gender"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/coloured_border_box">
+
+            <ImageView
+                android:id="@+id/img_gender"
+                android:layout_width="38dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_male"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="25dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/active_patient_status_age"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/coloured_border_box">
+
+            <ImageView
+                android:id="@+id/img_age"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/ic_children"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 years old"
+                android:textSize="25dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lvPatient"
+        android:layout_below="@+id/active_patient_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"></ListView>
+
+</RelativeLayout>

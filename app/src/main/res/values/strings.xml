@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">EmerCall Ambulance</string>
+
+    <string name="patient">Victim</string>
+    <string name="map">Map</string>
+    <string name="check">Confirm</string>
+
+    <string name="welcome1_text1">Welcome to EmerCall application for ambulances - EmerCall Ambulance</string>
+    <string name="welcome1_text2">Press Next to continue</string>
+
+    <string name="welcome2_text1">Ambulance EmerCall is the second application of EmerCall Real-time Emergency Assistance System, developed for emergency squads on ambulances.</string>
+    <string name="welcome2_text2">Ambulance EmerCall provides them information about user location, victim status, helping them to approach the site faster and be ready for the case, thus increasing victim survivability.</string>
+
+    <string name="welcome3_text1">Map: can be accessed without Emergency State. In Emergency State, this function provides user and ambulance locations.</string>
+    <string name="welcome3_text2">Victim status: only in Emergency State. This function shows victim information and status provided by the user.</string>
+    <string name="welcome3_text3">Case confirmation: only in Emergency State. After finishing the transfer, ambulance squad must confirm the status of this transfer.</string>
+    <string name="welcome3_text4">These 3 functions can be interacted via the navigation bar at the bottom of the screen.</string>
+
+    <string name="welcome4_text1">To synchronize with server database, pleae enter this ambulance ID</string>
+    <string name="welcome4_text2">When activated, EmerCall system will send, receive, distribute and continuously update user and ambulance locations, thus helping the ambulance to approach the site faster.</string>
+    <string name="welcome4_text3">Thus, to ensure EmerCall performance, please authorize Location Permission for this application.</string>
+    <string name="welcome4_text4">To authorize, press AUTHORIZE LOCATION PERMISSION button below. A message will appear, asking the user for confirmation. Press Allow to confirm.</string>
+    <string name="welcome4_text5">After successfully authorizing Location Permission, press Next to continue.</string>
+
+    <string name="welcomeFinal_text1">Basic guide completed</string>
+    <string name="welcomeFinal_text2">EmerCall Ambulance initiating...</string>
+
+    <string name="active_state_check_title">Emergency Case Confirmation</string>
+    <string name="active_state_check_text1">Please confirm the result of previous emergency transfer:</string>
+    <string name="active_state_check_text2">After completing the previous emergency transfer, press Confirm to begin this process:</string>
+
+</resources>

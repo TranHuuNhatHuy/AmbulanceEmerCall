@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/bottom_navigation_bar"
+        layout="@layout/bottom_navigation_bar" ></include>
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp"
+        android:background="@color/colorMainTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/active_check_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/active_state_check_title"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#fff"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/active_state_check_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/img_active_check"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/active_check_image"/>
+
+            <TextView
+                android:id="@+id/active_state_check_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/active_state_check_text2"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:layout_gravity="center" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:checkedButton="@+id/rbtnTrue">
+
+                <RadioButton
+                    android:id="@+id/rbtnTrue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Successfully transferred victim to the hospital"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:buttonTint="#fff"/>
+
+                <RadioButton
+                    android:id="@+id/rbtnFake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Unable to locate either the victim or user"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:buttonTint="#fff"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/active_state_check_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/active_state_check_btnAffirmative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Confirm"
+                style="@style/AppTheme.Button"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
